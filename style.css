@@ -110,7 +110,7 @@ a img {
 }*/
 
 #footer {
-    padding: 10px 25px 10px 25px;
+    padding: 5px 25px 15px 25px;
     clear: both;
     width: 800px;
     height: auto;
@@ -141,6 +141,10 @@ body {
 a:link, a:active, a:hover, a:visited {
     color: #0088b4;
     text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
 }
 
 p {
@@ -218,6 +222,7 @@ div#content p {
 
 #header div#nav ul#sections li a:active, #header div#nav ul#sections li a:hover {
     color: #0088b4;
+    text-decoration: none;
 }
 
 #header div#nav ul#scale {
@@ -252,6 +257,6 @@ div#content p {
 #footer {
     text-shadow: #ffffff 0px 1px;
     font-size: 12px;
-    line-height: px;
     font-style: italic;
+    text-align: center;
 }
