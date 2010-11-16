@@ -60,12 +60,12 @@ a img {
     width: 900px;
     height: auto;
     margin: 0px auto;
-    padding: 15px 75px 75px 75px;
+    padding: 25px 75px 75px 75px;
     background-attachment: fixed;
     background-position: center top;
     background-image: url('images/california_rail_map_cropped.png');
     background-repeat: no-repeat;
-    border-style: none;
+    border-style: solid;
     border-color: #976900;
     border-width: 0px 5px 5px 5px;
 }
@@ -88,24 +88,25 @@ a img {
 #header {
     width: 800px;
     height: auto;
-    padding: 10px 25px 12px 25px;
+    padding: 15px 25px 15px 25px;
 }
 
 #body {
     width: 800px;
-    margin: 0px 25px 0px 25px;
-    background: #fafafa;
+    margin: 15px 25px 15px 25px;
+    /*background: #fafafa;*/
 }
 
 #content {
-    height: 300px;
-    width: 625px;
+    height: auto;
+    width: 595px;
+    padding: 0px;
 }
 
 #sider {
     float: right;
     width: 175px;
-    height: 300px;
+    height: auto;
 }
 
 #footer {
@@ -118,7 +119,12 @@ a img {
 /* BEGIN typography */
 
 body {
-    font-family: Georgia;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+#body {
+    color: #000;
 }
 
 /* END typography */
@@ -135,6 +141,10 @@ body {
 a:link, a:active, a:hover, a:visited {
     color: #0088b4;
     text-decoration: none;
+}
+
+p {
+    line-height: 1.4;
 }
 
 /* END elements */
