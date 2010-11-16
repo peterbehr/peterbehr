@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li>
-                            <a>
+                            <a href="/projects/">
                                 Projects
                             </a>
                         </li>
@@ -65,14 +65,9 @@
                                 Resume
                             </a>
                         </li>
-                        <li>
-                            <a>
-                                About
-                            </a>
-                        </li>
                         <li class="end">
                             <a>
-                                Contact
+                                Networks
                             </a>
                         </li>
                     </ul>

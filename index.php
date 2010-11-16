@@ -8,8 +8,4 @@
                     </p>
                 </div>
 
-        <?php
-            //get_template_part( 'loop', 'index' );
-        ?>
-
 <?php get_footer(); ?>
