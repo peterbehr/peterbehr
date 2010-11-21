@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php (is_category('Projects')) { ?>
+<?php if (is_category('Projects')) { ?>
 
                 <!--div id="sider">
                 </div-->
