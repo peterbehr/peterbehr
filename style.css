@@ -57,44 +57,37 @@ a img {
 /* BEGIN layout */
 
 #background {
-    width: 900px;
+    width: auto;
     height: auto;
     margin: 0px auto;
-    padding: 25px 75px 75px 75px;
+    background-color: #eee;
     background-attachment: fixed;
     background-position: center top;
-    background-image: url('images/california_rail_map_cropped.jpg');
+    background-image: none;
     background-repeat: no-repeat;
     border-style: solid;
     border-color: #976900;
-    border-width: 0px 3px 3px 3px;
-}
-
-#border {
-    width: 850px;
-    padding: 25px;
-    height: auto;
-    background-image: url('images/opacity/white_1x1_opacity_90.png');
-    background-repeat: repeat;
+    border-width: 0px;
 }
 
 #container {
-    width: 850px;
+    width: 800px;
     padding: 0px;
+    margin: 0px auto;
     height: auto;
     background: #dedbcf;
 }
 
 #header {
     width: 800px;
-    height: auto;
-    padding: 15px 25px 15px 25px;
+    height: 100px;
+    padding: 0px;
 }
 
 #body {
     width: 800px;
     margin: 10px 25px 10px 25px;
-    /*background: #fafafa;*/
+    background: #fafafa;
 }
 
 #content {
@@ -134,7 +127,6 @@ body {
 /* BEGIN elements */
 
 body {
-    background: #444 url('images/concrete.png') repeat;
     color: #342b23;
 }
 
@@ -187,6 +179,9 @@ div#content p {
 
 
 /* BEGIN #header */
+
+#header div#map {
+    
 
 #header {
     text-shadow: #ffffff 0px 1px;
