@@ -7,6 +7,10 @@ Version: 1.0
 Tags: new
 */
 
+
+
+/* BEGIN reset */
+
 /* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
 -------------------------------------------------------------- */
 
@@ -54,46 +58,75 @@ a img {
     border: none;
 }
 
+/* END resets */
+
+
+
 /* BEGIN layout */
 
-#background {
-    width: auto;
-    height: auto;
+body {
+    width: 100%;
+    height: 100%;
     margin: 0px auto;
-    background-color: #eee;
-    background-attachment: fixed;
-    background-position: center top;
+    background-color: #eaeaea;
     background-image: none;
-    background-repeat: no-repeat;
     border-style: solid;
     border-color: #976900;
     border-width: 0px;
 }
 
-#container {
-    width: 800px;
-    padding: 0px;
-    margin: 0px auto;
-    height: auto;
-    background: #dedbcf;
-}
-
 #header {
-    width: 800px;
-    height: 100px;
+    width: 100%;
+    height: auto;
     padding: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
-#body {
-    width: 800px;
-    margin: 10px 25px 10px 25px;
-    background: #fafafa;
+#map {
+    width: auto;
+    height: 40px;
+    background-image: url('images/california_rail_map_strip_half.png');
+    /*background-position: center top;*/
+    background-repeat: no-repeat;
+    border-bottom: 0px solid #444;
+}
+
+#map div {
+    height: 40px;
+    background-image: url('images/gradient_8_0_30.png');
+    background-position: bottom left;
+    background-repeat: repeat-x;
+}
+
+#nav {
+    width: auto;
+    height: 36px;
+    padding: 4px 0px 8px 0px;
+    background-image: url('images/wood_artificial.png');
+    background-repeat: repeat-x;
+    background-attachment: top left;
+    background-color: #e4bd8d;
+    border-bottom: 1px solid #966330;
+}
+
+#shadow {
+    width: auto;
+    height: 8px;
+    background-image: url('images/shadow_small_less.png');
+    repeat-x;
+}
+
+#container {
+    width: 840px;
+    height: auto;
+    margin: 0px auto;
+    padding: 110px auto 0px auto;
 }
 
 #content {
-    height: auto;
-    width: 750px;
-    padding: 0px;
+    padding: 115px 0px 10px 0px;
 }
 
 /*#sider {
@@ -109,15 +142,16 @@ a img {
     height: auto;
 }
 
+/* END layout */
+
+
+
 /* BEGIN typography */
 
 body {
-    font-family: Georgia, serif;
+    font-family: "Didot", "Times New Roman", serif;
     font-size: 16px;
-}
-
-#body {
-    color: #000;
+    color: #342b23;
 }
 
 /* END typography */
@@ -125,10 +159,6 @@ body {
 
 
 /* BEGIN elements */
-
-body {
-    color: #342b23;
-}
 
 a:link, a:active, a:hover, a:visited {
     color: #0088b4;
@@ -142,22 +172,9 @@ a:hover, a:active {
 p {
     line-height: 1.4;
     text-align: justify;
-}
-
-div#content {
-    padding: 15px 25px 5px 25px;
-    background: #f0f0f0;
-}
-
-div#content ul {
-    list-style-type: square;
-    list-style-position: inside;
-    line-height: 1.4;
-    padding: 0px 0px 10px 0px;
-}
-
-div#content p {
-    padding: 0px 0px 10px 0px;
+    margin: 20px 0px 20px 0px;
+    padding: 20px;
+    background: #ddd;
 }
 
 /* END elements */
@@ -180,67 +197,76 @@ div#content p {
 
 /* BEGIN #header */
 
-#header div#map {
-    
+/*
 
-#header {
-    text-shadow: #ffffff 0px 1px;
+Colors:
+
+Text: #5a320b
+Text hover:
+Scale (inset): #5a320b
+Highlights:
+
+*/
+
+#nav div.inset {
+    margin: 0px auto;
+    width: 840px;
 }
 
-#header ul {
+#nav ul {
     list-style-type: none;
+    text-shadow: #fffdef 0px 1px;
 }
 
-#header div#nav {
-    padding: 0px 0px 0px 0px;
-}
-
-#header div#nav ul#sections li {
+#nav ul#sections li {
     float: left;
-    border-left: #342b23 solid 2px;
-    height: 8px;
-    margin: 20px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     font-style: italic;
+    height: 26px;
+    line-height: 26px;
 }
 
-#header div#nav ul#sections li.end, #header div#nav ul#scale li.end  {
-    border-right: #342b23 solid 2px;
-}
-
-#header div#nav ul#sections li a {
-    font-size: 22px;
-    margin: -18px 0px 0px 0px;
-    padding: 0px 30px 0px 8px;
+#nav ul#sections li a {
+    font-size: 20px;
+    padding: 0px 50px 0px 6px;
     display: block;
-    color: #342b23;
+    color: #5a320b;
 }
 
-#header div#nav ul#sections li a:active, #header div#nav ul#sections li a:hover {
+#nav ul#sections li.peg {
+    height: 8px;
+    width: 2px;
+    margin: 18px 0px 0px 0px;
+    background: #5a320b;
+    line-height: 0px;
+}
+
+#nav ul#sections li a:active, #header div#nav ul#sections li a:hover {
     color: #0088b4;
     text-decoration: none;
 }
 
-#header div#nav ul#scale {
-    border-bottom: #fff solid 1px;
-    height: 10px; /* height of li plus 2 */
-    width: 712px;
-}
-
-#header div#nav ul#scale li {
+#nav ul#scale li {
     float: left;
-    border-top: #342b23 solid 2px;
-    border-left: #342b23 solid 2px;
-    height: 8px;
-    width: 140px;
+    width: 120px;
+    border-top: #54310e solid 2px;
 }
 
-#header div#nav ul#scale li span {
+#nav ul#scale li span {
     font-size: 10px;
-    border-top: #fff solid 1px;
+    line-height: 10px;
+    border-top: #fffdef solid 1px;
     display: block;
     text-align: right;
-    padding: 0px 5px 0px 0px;
-    background: #dedbcf;
+    padding: 0px 4px 0px 0px;
+}
+
+#nav ul#scale li.peg {
+    height: 8px;
+    width: 2px;
+    margin: 0px 0px 2px 0px;
+    background: #5a320b;
+    border-bottom: #fffdef solid 1px;
 }
 
 /* END #header */
