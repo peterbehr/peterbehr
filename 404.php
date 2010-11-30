@@ -1,9 +1,7 @@
 <?php get_header(); ?>
 
-                <div id="content">
-                    <p>
-                        Not here! =\
-                    </p>
-                </div>
+<p>
+    Oh noes! The thing you wanted to see is not here...<a href="/contact/">let me no, eh?
+</p>
 
 <?php get_footer(); ?>
