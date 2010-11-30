@@ -1,11 +1,7 @@
 <?php get_header(); ?>
 
-                <!--div id="sider">
-                </div-->
-                <div id="content">
-                    <p>
-                        Hey.
-                    </p>
-                </div>
+<p>
+    Hey.
+</p>
 
 <?php get_footer(); ?>
