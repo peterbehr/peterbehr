@@ -189,7 +189,7 @@ p {
     text-align: justify;
     margin: 0px 0px 10px 0px;
     padding: 10px 20px 10px 20px;
-    background: url('images/opacity/opacity_000000_1x1_10.png');
+    background: url('images/opacity/opacity_000000_1x1_10.png') repeat;
 }
 
 #content ul {
@@ -301,4 +301,31 @@ Highlights:
     font-size: 14px;
     font-style: italic;
     text-align: center;
+}
+
+
+
+/* BEGIN single post garbage */
+
+div.image {
+    width: 480px;
+    padding: 10px;
+    background: url('images/opacity/opacity_000000_1x1_10.png') repeat;
+    float: left;
+}
+
+div.image img {
+    width: 480px;
+    height: auto;
+}
+
+div.text {
+    width: 320px;
+    padding: 0px 0px 0px 20px;
+    float: right;
+}
+
+#temp {
+    clear: both;
+    height: 10px;
 }
