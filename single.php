@@ -2,9 +2,8 @@
 
 <?php while ( have_posts() ) : the_post() ?>
 
-
 <p class="heading" style="font-weight: 900; margin-bottom: 20px;">
-    <span>Test Post</span>
+    <?php the_title(); ?>
 </p>
 
 <div class="image">

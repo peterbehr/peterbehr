@@ -1,8 +1,16 @@
 <?php get_header(); ?>
 
-<?php if (is_category('Projects')) { ?>
+<?php if (is_category('Projects')) {
+    foreach(get_categories(array('child_of' => get_cat_ID('projects'), 'hide_empty' => 0, 'orderby' => id)) as $child_cat) {
+        $child_cat_id = $child_cat->cat_ID;
+        echo("<p>\n" . $child_cat->cat_name . "\n</p>\n");
+    }
+?>
 
-<p>
+
+
+
+<!--p>
     Recentlyish:
 </p>
 <ul>
@@ -35,7 +43,7 @@
     <li>
         <a href="http://aristarchus.deviantart.com/gallery/">DeviantArt</a> (temporary art portfolio)
     </li>
-</ul>
+</ul-->
 
 <?php } else if (is_category('Contact')) { ?>
 

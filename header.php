@@ -74,6 +74,7 @@
                 </li>
                 <li class="peg"></li>
             </ul>
+            <div class="right emblem"></div>
         </div>
     </div>
     <div id="shadow">

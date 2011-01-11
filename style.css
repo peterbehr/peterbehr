@@ -11,11 +11,12 @@ Tags: new
 
 TODO
 
-hic sunt ursi
+hic sunt ursi/dracones
 
 * when window is resized to nothing, left margin nonexistent, pad this
 * to show you're on a particular heading: text in red, dot in ring (cityesque) symbol next to it
 * replace pbehr.com in headers with peterbehr.net
+* "I am not really available for work, but easily distracted." (say this more eloquently)
 
 */
 
@@ -72,7 +73,14 @@ a img {
 
 /* END resets */
 
+.right { float: right; }
 
+.emblem {
+    height: 38px;
+    width: 29px;
+    margin-top: -23px;
+    background: url('images/emblem.png') no-repeat top left;
+}
 
 /* BEGIN layout */
 
