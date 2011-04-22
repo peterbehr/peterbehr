@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" href="http://peterbehr.net/biblioteka/css/default.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
-<script type="text/javascript" src="http://peterbehr.net/biblioteka/js/default.js" />
+<script type="text/javascript" src="http://peterbehr.net/biblioteka/js/default.js"></script>
 
 <?php wp_head(); ?>
 
