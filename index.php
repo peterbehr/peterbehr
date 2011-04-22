@@ -1,24 +1,5 @@
 <?php get_header(); ?>
 
-<!--div class="section odd">
-    
-    <div class="grid_container centered">
-        
-        <p class="grid_1_3 left">
-            Quo usque tandem abutere, Catilina, patientia nostra? quam diu etiam furor iste tuus nos eludet? quem ad finem sese effrenata iactabit audacia?
-        </p>
-        
-        <div class="grid_2_3 right">
-            <div style="padding: 10px; width: 400px; background-color: #0a4c95; height: 300px;"></div>
-        </div>
-        
-    </div>
-    
-    <div class="shadow clear">
-    </div>
-    
-</div-->
-
 <?php
 
 $counter = 1;
