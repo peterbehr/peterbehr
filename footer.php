@@ -1,8 +1,12 @@
-    </div><!-- #content -->
-    <div id="footer">
-        <span class="normal">Cartograph</span> is being made in California by yours truly in 2010. It's buddies with <a href="http://wordpress.com">WordPress <?php bloginfo('version'); ?></a>.
+</div><!-- #content -->
+    
+<div id="footer">
+    <div class="grid_container centered">
+        <p class="grid_3_3 italic">
+            This was made in 2011 with loving care &amp; worry in and around Oakland, California. Biggest ups to <a href="http://webfaction.com">WebFaction</a>, <a href="http://apple.com">Apple Computer</a>, and <a href="http://wordpress.com">WordPress</a>. A tediously comprehensive colophon will come later. <a href="#">Now back up!</a>
+        </p>
     </div>
-</div><!-- #container -->
+</div>
 
 <?php wp_footer(); ?>
 
