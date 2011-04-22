@@ -3,20 +3,26 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-
-<meta charset="<?php bloginfo( 'charset' ); ?>" />
-<title>
-    <?php bloginfo( 'name' ); ?>
-</title>
-
-<link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" href="http://peterbehr.net/biblioteka/css/default.css" />
-<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-
-<script type="text/javascript" src="http://peterbehr.net/biblioteka/js/default.js"></script>
-
-<?php wp_head(); ?>
-
+    
+    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="author" content="Peter Behr" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="robots" content="all" />
+    
+    <title>
+        <?php bloginfo( 'name' ); ?>
+    </title>
+    
+    <link rel="stylesheet" type="text/css" media="all" title="" href="http://peterbehr.net/biblioteka/css/default.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    
+    <script type="text/javascript" src="http://peterbehr.net/biblioteka/js/default.js"></script>
+    
+    <?php wp_head(); ?>
+    
 </head>
 
 <body <?php body_class(); ?>>
