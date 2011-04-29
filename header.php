@@ -36,7 +36,7 @@
         </h1>
         
         <h3 class="grid_3_3">
-            Here are some projects I've worked on. You can also find more bits and pieces on <a href="https://github.com/peterbehr">Github</a>, <a href="http://www.flickriver.com/photos/peterbehr/sets/72157623305813607/">Flickr</a>, <a href="http://www.quora.com/Peter-Behr">Quora</a>, <a href="http://peterbehr.yelp.com">Yelp</a>, and <a href="http://www.linkedin.com/in/peterbehr">LinkedIn</a>. Want to talk? Just holler through <a href="http://twitter.com/peterbehr">Twitter</a> or <a href="http://facebook.com/peterbehr">Facebook</a>.
+            Here are some projects I've worked on. You can also find more bits and pieces on <a href="https://github.com/peterbehr">Github</a>, <a href="http://www.flickriver.com/photos/peterbehr/sets/72157623305813607/">Flickr</a>, <a href="http://www.quora.com/Peter-Behr">Quora</a>, <a href="http://peterbehr.yelp.com">Yelp</a>, <a href="http://pinboard.in/u:peterbehr/">Pinboard</a>, and <a href="http://www.linkedin.com/in/peterbehr">LinkedIn</a>. Want to talk? Just holler through <a href="http://twitter.com/peterbehr">Twitter</a> or <a href="http://facebook.com/peterbehr">Facebook</a>.
         </h3>
         
     </div>
