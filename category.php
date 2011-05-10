@@ -63,6 +63,7 @@ foreach ($categories as $key => $value) {
         }
 ?>
 
+    </div>
     <div class="<?php echo($clear_class); ?> clear">
     </div>
 </div>
