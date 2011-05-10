@@ -25,7 +25,7 @@
     
 </head>
 
-<body <?php body_class(); ?>>
+<body>
 
 <div id="header" class="section even">
     

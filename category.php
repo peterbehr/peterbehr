@@ -5,9 +5,26 @@ $categories = array();
 
 while (have_posts()) {
     the_post();
+    
+    $tags = get_the_tags();
+    $date = ($tags) ? current($tags)->name : '';
+    
     foreach (get_the_category() as $category) {
-        $categories[$category->cat_name][] = $post;
+        $categories[$category->cat_name][] = array( 'post' => $post,
+                                                    'date' => $date );
     }
+}
+
+// reverse alpha order on category names
+krsort($categories);
+
+// post array comparison, uses date value
+// falls back to post title
+function cmp($a, $b) {
+    if ($a['date'] == $b['date']) {
+        return (strcmp($a['post']->post_title, $b['post']->post_title));
+    }
+    return ($a['date'] > $b['date']) ? -1 : 1;
 }
 
 foreach ($categories as $key => $value) {
@@ -28,13 +45,15 @@ foreach ($categories as $key => $value) {
             <h2><?php echo($key); ?></h2>
         </div>
 <?php
-        $value = array_reverse($value);
+        
+        usort($value, "cmp");
         $counter = 0;
+        
         foreach ($value as $item) {
             $args = array(  'post_type' => 'attachment',
                             'posts_per_page' => -1,
                             'post_status' => null,
-                            'post_parent' => $item->ID
+                            'post_parent' => $item['post']->ID
                         ); 
             
             $attachments = get_posts($args);
@@ -51,7 +70,7 @@ foreach ($categories as $key => $value) {
             <div class="image"><?php echo($image); ?></div>
             <div class="text">
                 <h3 class="bold">
-                    <?php echo($item->post_title); ?>
+                    <?php echo($item['post']->post_title); ?>
                 </h3>
             </div>
         </div>
