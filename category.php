@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <?php
-
 $categories = array();
 
 while (have_posts()) {
@@ -10,8 +9,6 @@ while (have_posts()) {
         $categories[$category->cat_name][] = $post;
     }
 }
-
-$polarity = 1;
 
 foreach ($categories as $key => $value) {
     if ($key != 'Projects') {
@@ -24,17 +21,15 @@ foreach ($categories as $key => $value) {
             $clear_class = 'zero';
             $polarity = 1;
         }
-
 ?>
-
 <div class="section project <?php echo($section_class); ?>">
     <div class="grid_container centered">
         <div class="grid_3_3">
             <h2><?php echo($key); ?></h2>
         </div>
-
 <?php
         $value = array_reverse($value);
+        $counter = 0;
         foreach ($value as $item) {
             $args = array(  'post_type' => 'attachment',
                             'posts_per_page' => -1,
@@ -49,8 +44,9 @@ foreach ($categories as $key => $value) {
             } else {
                 $image = '';
             }
+            
+            $counter++;
 ?>
-
         <div class="grid_1_3 left">
             <div class="image"><?php echo($image); ?></div>
             <div class="text">
@@ -59,11 +55,15 @@ foreach ($categories as $key => $value) {
                 </h3>
             </div>
         </div>
-
 <?php
+            if ($counter % 3 == 0) {
+?>
+        <div class="clear zero">
+        </div>
+<?php
+            }
         }
 ?>
-
     </div>
     <div class="<?php echo($clear_class); ?> clear">
     </div>
