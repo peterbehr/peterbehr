@@ -7,44 +7,24 @@ Version: 0
 Tags: simple
 */
 
-/*
-
-TODO
-
-*/
 
 
+/* BEGIN elements */
 
-/* BEGIN layout */
 
 body {
     width: 100%;
     height: 100%;
     margin: 0px auto;
     background-color: #ebebeb;
-    background-image: url('noise.png');
+    background-image: url('images/noise.png');
     background-repeat: repeat;
-}
-
-/* END layout */
-
-
-
-/* BEGIN typography */
-
-body {
     font-family: "Baskerville", "Georgia", serif;
     font-size: 16px;
     color: #555;
     font-weight: 100;
     line-height: 1.5;
 }
-
-/* END typography */
-
-
-
-/* BEGIN elements */
 
 a:link, a:active, a:hover, a:visited {
     color: #0098d4;
@@ -61,7 +41,13 @@ h2 { font-size: 24px; margin-bottom: 10px !important; }
 
 h3 { font-size: 20px; margin-bottom: 8px !important; }
 
+img { display: block; }
+
 /* END elements */
+
+
+
+/* BEGIN structure, grid */
 
 .section {
     clear: both;
@@ -73,22 +59,13 @@ h3 { font-size: 20px; margin-bottom: 8px !important; }
 .grid_1_3 { width: 200px; margin: 0px 10px; }
 .grid_2_3 { width: 420px; margin: 0px 10px; }
 .grid_3_3 { width: 640px; margin: 0px 10px; }
+.centered { margin-left: auto; margin-right: auto; }
 
-.centered { margin: 0px auto; }
-
-
-
-/* BEGIN #header */
-
-/* END #header */
+/* END structure, grid */
 
 
 
 /* BEGIN #footer */
-
-
-
-/* END #footer */
 
 #footer {
     background-image: url('http://peterbehr.net/biblioteka/images/opacity/opacity_000000_1x1_010.png');
@@ -97,33 +74,46 @@ h3 { font-size: 20px; margin-bottom: 8px !important; }
     padding: 20px 0px 20px 0px;
 }
 
-/* BEGIN .even */
+/* END #footer */
 
-.even {
+
+
+/* BEGIN .project */
+
+.project .text p {
+    margin: 0px 0px 10px 0px;
+}
+
+.project .text p.details {
+    font-style: italic;
+}
+
+/* END .project */
+
+
+
+/* BEGIN .bright */
+
+.bright {
     text-shadow: #fff 0px 1px;
 }
 
-.project.odd .image {
-    width: 400px;
-    padding: 10px;
-    background-image: url('http://peterbehr.net/biblioteka/images/opacity/opacity_ffffff_1x1_010.png');
-    background-repeat: repeat;
-}
-
-.project.even .image {
-    width: 400px;
-    padding: 10px;
+.project.bright .image {
     background-image: url('http://peterbehr.net/biblioteka/images/opacity/opacity_000000_1x1_010.png');
     background-repeat: repeat;
 }
 
-.project .image img {
-    display: block;
+.project.bright .text p.details {
+    color: #888;
 }
 
-/* BEGIN .odd */
+/* END .bright */
 
-.odd {
+
+
+/* BEGIN .dark */
+
+.dark {
     background-color: #074a90;
     color: #fdfdfd;
     background-image: url('http://peterbehr.net/biblioteka/images/gradients/gradient_000000_1x8_020_000.png');
@@ -133,25 +123,29 @@ h3 { font-size: 20px; margin-bottom: 8px !important; }
     text-shadow: #000 0px -1px;
 }
 
-.odd div.shadow {
+.dark div.shadow {
     height: 20px;
     background-image: url('http://peterbehr.net/biblioteka/images/gradients/gradient_000000_1x8_000_020.png');
     background-position: 0px 12px;
     background-repeat: repeat-x;
 }
 
-.project .post p {
-    margin: 0px 0px 10px 0px;
-}
-
-.project .post p.details {
-    font-style: italic;
-}
-
-.project.odd .post p.details {
+.project.dark .text p.details {
     color: #ccc;
 }
 
-.project.even .post p.details {
-    color: #888;
+.project.dark .image {
+    background-image: url('http://peterbehr.net/biblioteka/images/opacity/opacity_ffffff_1x1_010.png');
+    background-repeat: repeat;
 }
+
+/* END .dark */
+
+
+
+/* BEGIN image */
+
+.grid_1_3 .image { width: 180px; padding: 10px; }
+.grid_1_3 img { width: 180px; height: auto; }
+.grid_2_3 .image { width: 400px; padding: 10px; }
+.grid_2_3 img { width: 400px; height: auto; }

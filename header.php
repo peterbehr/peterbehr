@@ -4,7 +4,7 @@
 
 <head>
     
-    <meta charset="<?php bloginfo( 'charset' ); ?>" />
+    <meta charset="<?php bloginfo('charset'); ?>" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="Content-Language" content="en" />
     <meta name="author" content="Peter Behr" />
@@ -13,11 +13,11 @@
     <meta name="robots" content="all" />
     
     <title>
-        <?php bloginfo( 'name' ); ?>
+        <?php bloginfo('name'); ?>
     </title>
     
     <link rel="stylesheet" type="text/css" media="all" title="" href="http://peterbehr.net/biblioteka/css/default.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
     
     <script type="text/javascript" src="http://peterbehr.net/biblioteka/js/default.js"></script>
     
