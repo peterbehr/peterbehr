@@ -145,7 +145,7 @@ img { display: block; }
 
 /* BEGIN image */
 
-.grid_1_3 .image { width: 180px; padding: 10px; }
+.grid_1_3 .image { width: 180px; padding: 10px; margin: 0px 0px 10px 0px; }
 .grid_1_3 img { width: 180px; height: auto; }
-.grid_2_3 .image { width: 400px; padding: 10px; }
+.grid_2_3.image { width: 400px; padding: 10px; }
 .grid_2_3 img { width: 400px; height: auto; }
