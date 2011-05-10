@@ -34,6 +34,7 @@ foreach ($categories as $key => $value) {
         </div>
 
 <?php
+        $value = array_reverse($value);
         foreach ($value as $item) {
             $args = array(  'post_type' => 'attachment',
                             'posts_per_page' => -1,
