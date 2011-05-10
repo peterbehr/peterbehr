@@ -11,6 +11,8 @@ while (have_posts()) {
     }
 }
 
+$polarity = 1;
+
 foreach ($categories as $key => $value) {
     if ($key != 'Projects') {
         if ($polarity) {

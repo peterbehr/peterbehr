@@ -2,6 +2,8 @@
 
 <?php
 
+$polarity = 1;
+
 query_posts(array('category_name' => 'Projects', 'order' => 'ASC'));
 while (have_posts()) : the_post();
 
