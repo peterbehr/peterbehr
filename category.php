@@ -1,5 +1,15 @@
 <?php get_header(); ?>
 
+<div class="section">
+    <div class="grid_container centered">
+        <h1 class="grid_3_3" style="margin-bottom: 0px;">
+        <?php
+            echo(ucwords(get_query_var('category_name')));
+        ?>
+        </p>
+    </div>
+</div>
+
 <?php
 $categories = array();
 
@@ -50,19 +60,7 @@ foreach ($categories as $key => $value) {
         $counter = 0;
         
         foreach ($value as $item) {
-            $args = array(  'post_type' => 'attachment',
-                            'posts_per_page' => -1,
-                            'post_status' => null,
-                            'post_parent' => $item['post']->ID
-                        ); 
-            
-            $attachments = get_posts($args);
-            
-            if ($attachments) {
-                $image = wp_get_attachment_image($attachments[0]->ID, 'full');
-            } else {
-                $image = '';
-            }
+            $image = get_images($item['post']->ID, '180');
             
             $counter++;
 ?>

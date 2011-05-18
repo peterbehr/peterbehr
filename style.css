@@ -33,13 +33,13 @@ a:link, a:active, a:hover, a:visited {
 
 a:hover, a:active { text-decoration: underline; }
 
-p, h1, h2, h3, h4, h5, h6 { text-align: justify; }
+p, h1, h2, h3, h4, h5, h6 { text-align: left; }
 
-h1 { font-size: 28px; margin-bottom: 14px !important; }
+h1 { font-size: 28px; margin-bottom: 14px; }
 
-h2 { font-size: 24px; margin-bottom: 10px !important; }
+h2 { font-size: 24px; margin-bottom: 10px; }
 
-h3 { font-size: 20px; margin-bottom: 8px !important; }
+h3 { font-size: 20px; margin-bottom: 8px; }
 
 img { display: block; }
 
@@ -56,9 +56,9 @@ img { display: block; }
 }
 
 .grid_container { width: 660px; }
-.grid_1_3 { width: 200px; margin: 0px 10px; }
-.grid_2_3 { width: 420px; margin: 0px 10px; }
-.grid_3_3 { width: 640px; margin: 0px 10px; }
+.grid_1_3 { width: 200px; margin-left: 10px; margin-right: 10px; }
+.grid_2_3 { width: 420px; margin-left: 10px; margin-right: 10px; }
+.grid_3_3 { width: 640px; margin-left: 10px; margin-right: 10px; }
 .centered { margin-left: auto; margin-right: auto; }
 
 /* END structure, grid */
@@ -147,5 +147,7 @@ img { display: block; }
 
 .grid_1_3 .image { width: 180px; padding: 10px; margin: 0px 0px 10px 0px; }
 .grid_1_3 img { width: 180px; height: auto; }
-.grid_2_3.image { width: 400px; padding: 10px; }
+.grid_2_3 .image { width: 400px; padding: 10px; }
 .grid_2_3 img { width: 400px; height: auto; }
+.grid_3_3 .image { width: 600px; padding: 20px; margin: 0px 0px 10px 0px; }
+.grid_3_3 img { width: 600px; height: auto; }
