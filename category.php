@@ -60,7 +60,7 @@ foreach ($categories as $key => $value) {
         $counter = 0;
         
         foreach ($value as $item) {
-            $image = get_images($item['post']->ID, '180');
+            $image = get_images($item['post']->ID, 'crop');
             
             $counter++;
 ?>

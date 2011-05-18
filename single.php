@@ -3,7 +3,7 @@
 <?php
 the_post();
 
-$image = get_images($post->ID, '600');
+$image = get_images($post->ID, 'full');
 ?>
 
 <div class="section bright project">

@@ -19,7 +19,7 @@ while (have_posts()) {
         $polarity = 1;
     }
     
-    $image = get_images($post->ID, '400');
+    $image = get_images($post->ID, 'crop');
     $permalink = '<a href="'.get_permalink($post->ID).'" class="italic">View &rarr;</a>';
 ?>
 

@@ -15,7 +15,7 @@ function get_images($id, $width) {
     $attachments = get_posts($args);
     $srcs = array();
     foreach ($attachments as $attachment) {
-        if (substr($attachment->post_title, -3, 3) == $width) {
+        if (substr($attachment->post_title, -4, 4) == $width) {
             $src = wp_get_attachment_image_src($attachment->ID, 'full');
             $src[3] = $attachment->post_title;
             $srcs[] = $src;
@@ -27,9 +27,9 @@ function get_images($id, $width) {
         $width = $srcs[0][1];
         $height = $srcs[0][2];
         $alt = $srcs[0][3];
-        $image = '<img src="'.$src.'" width="'.$width.'" height="'.$height.'" alt="'.$alt.'" />';
+        $image = '<img src="'.$src.'" alt="'.$alt.'" />';
     } else {
-        $image = 'Image not found';
+        $image = 'Image not found =[';
     }
     return($image);
 }
