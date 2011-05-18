@@ -29,6 +29,7 @@ body {
 a:link, a:active, a:hover, a:visited {
     color: #0098d4;
     text-decoration: none;
+    font-style: inherit;
 }
 
 a:hover, a:active { text-decoration: underline; }
