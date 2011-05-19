@@ -3,10 +3,10 @@
 <div class="section">
     <div class="grid_container centered">
         <h1 class="grid_3_3" style="margin-bottom: 0px;">
-        <?php
-            echo(ucwords(get_query_var('category_name')));
-        ?>
-        </p>
+<?php
+    echo(ucwords(get_query_var('category_name')));
+?>
+        </h1>
     </div>
 </div>
 
