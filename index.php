@@ -20,7 +20,7 @@ while (have_posts()) {
     }
     
     $image = get_images($post->ID, 'crop');
-    $permalink = '<a href="'.get_permalink($post->ID).'" class="italic">View &rarr;</a>';
+    $href = get_permalink($post->ID);
 ?>
 
 <div class="section project <?php echo($section_class); ?>">
@@ -34,7 +34,7 @@ while (have_posts()) {
             </h3>
             <?php echo($post->post_content); ?>
             <p class="right">
-                <?php echo($permalink); ?>
+                <a href="<?php echo($href); ?>" class="italic">View &rarr;</a>
             </p>
         </div>
     </div>

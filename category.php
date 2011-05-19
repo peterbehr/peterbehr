@@ -61,17 +61,20 @@ foreach ($categories as $key => $value) {
         
         foreach ($value as $item) {
             $image = get_images($item['post']->ID, 'crop');
+            $href = get_permalink($post->ID);
             
             $counter++;
 ?>
-        <div class="grid_1_3 left">
-            <div class="image"><?php echo($image); ?></div>
-            <div class="text">
-                <h3 class="bold">
-                    <?php echo($item['post']->post_title); ?>
-                </h3>
+        <a class="block" href="<?php echo($href); ?>">
+            <div class="grid_1_3 left">
+                <div class="image"><?php echo($image); ?></div>
+                <div class="text">
+                    <h3 class="bold">
+                        <?php echo($item['post']->post_title); ?>
+                    </h3>
+                </div>
             </div>
-        </div>
+        </a>
 <?php
             if ($counter % 3 == 0) {
 ?>

@@ -29,7 +29,7 @@ function get_images($id, $width) {
         $alt = $srcs[0][3];
         $image = '<img src="'.$src.'" alt="'.$alt.'" />';
     } else {
-        $image = 'Image not found =[';
+        $image = '<img src="http://peterbehr.net/media/blank_'.$width.'.png" alt="Blank, '.$width.'" />';
     }
     return($image);
 }
