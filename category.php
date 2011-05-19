@@ -61,7 +61,7 @@ foreach ($categories as $key => $value) {
         
         foreach ($value as $item) {
             $image = get_images($item['post']->ID, 'crop');
-            $href = get_permalink($post->ID);
+            $href = get_permalink($item['post']->ID);
             
             $counter++;
 ?>
