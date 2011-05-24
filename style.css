@@ -91,10 +91,6 @@ img { display: block; }
     margin: 0px 0px 10px 0px;
 }
 
-.project .text p.details {
-    font-style: italic;
-}
-
 /* END .project */
 
 
@@ -108,10 +104,6 @@ img { display: block; }
 .project.bright .image {
     background-image: url('http://peterbehr.net/biblioteka/images/opacity/opacity_000000_1x1_010.png');
     background-repeat: repeat;
-}
-
-.project.bright .text p.details {
-    color: #888;
 }
 
 /* END .bright */
@@ -166,6 +158,19 @@ a.block div.grid_1_3:hover {
 
 .text p {
     margin: 0px 0px 10px 0px;
+}
+
+.footnote a {
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.project .details {
+    font-style: italic;
+}
+
+.details {
+    color: #888;
 }
 
 /* END temporary */
