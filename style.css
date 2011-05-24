@@ -27,7 +27,7 @@ body {
 }
 
 a:link, a:active, a:hover, a:visited {
-    color: #0098d4;
+    color: #3fa2ca;
     text-decoration: none;
     font-style: inherit;
 }
@@ -159,3 +159,13 @@ a.block {
 a.block div.grid_1_3:hover {
     text-decoration: underline;
 }
+
+
+
+/* BEGIN temporary, I hope */
+
+.text p {
+    margin: 0px 0px 10px 0px;
+}
+
+/* END temporary */
