@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
     
     <script type="text/javascript" src="http://peterbehr.net/biblioteka/js/default.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('url'); ?>/js/analytics.js" />
     
     <?php wp_head(); ?>
     
