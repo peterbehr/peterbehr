@@ -6,7 +6,7 @@ the_post();
 $image = get_images($post->ID, 'full');
 ?>
 
-<div class="section bright project">
+<div class="section bright bald slim project">
     <div class="grid_container centered">
         <div class="grid_3_3">
             <div class="image"><?php echo($image); ?></div>

@@ -4,7 +4,7 @@
 while (have_posts()) {
     the_post();
 ?>
-<div class="section">
+<div class="section slim">
     <div class="grid_container centered">
         <div class="grid_3_3 text">
             <h1>

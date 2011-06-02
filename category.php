@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div class="section">
+<div>
     <div class="grid_container centered">
-        <h1 class="grid_3_3" style="margin-bottom: 0px;">
+        <h1 class="section slim grid_3_3">
 <?php
     echo(ucwords(get_query_var('category_name')));
 ?>
