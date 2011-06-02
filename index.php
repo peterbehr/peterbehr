@@ -46,4 +46,12 @@ while (have_posts()) {
 }
 ?>
 
+<div class="section grid_container centered">
+    <div class="grid_3_3">
+        <h3 class="right">
+            <a href="">All projects &rarr;</a>
+        </h3>
+    </div>
+</div>
+
 <?php get_footer(); ?>
