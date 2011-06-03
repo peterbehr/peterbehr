@@ -21,13 +21,7 @@ while (have_posts()) {
     }
     $posts[] = array(   'post' => $post,
                         'date' => $date );
-    function cmp($a, $b) {
-        if ($a['date'] == $b['date']) {
-            return (strcmp($a['post']->post_title, $b['post']->post_title));
-        }
-        return ($a['date'] > $b['date']) ? -1 : 1;
-    }
-    usort($posts, 'cmp');
+    usort($posts, 'cmp_date');
 }
 
 foreach ($posts as $post_array) {

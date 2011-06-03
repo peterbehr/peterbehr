@@ -15,6 +15,13 @@ function remove_limits() { return(""); }
 
 $polarity = 1;
 
+function cmp_date($a, $b) {
+    if ($a['date'] == $b['date']) {
+        return (strcmp($a['post']->post_title, $b['post']->post_title));
+    }
+    return ($a['date'] > $b['date']) ? -1 : 1;
+}
+
 function get_images($id, $width) {
     $args = array(  'post_type' => 'attachment',
                     'posts_per_page' => -1,

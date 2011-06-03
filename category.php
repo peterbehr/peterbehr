@@ -30,12 +30,6 @@ krsort($categories);
 
 // post array comparison, uses date value
 // falls back to post title
-function cmp($a, $b) {
-    if ($a['date'] == $b['date']) {
-        return (strcmp($a['post']->post_title, $b['post']->post_title));
-    }
-    return ($a['date'] > $b['date']) ? -1 : 1;
-}
 
 foreach ($categories as $key => $value) {
     if ($key != 'Projects') {
@@ -56,7 +50,7 @@ foreach ($categories as $key => $value) {
         </div>
 <?php
         
-        usort($value, 'cmp');
+        usort($value, 'cmp_date');
         $counter = 0;
         
         foreach ($value as $item) {
