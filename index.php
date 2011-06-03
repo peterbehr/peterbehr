@@ -66,7 +66,7 @@ foreach ($posts as $post_array) {
 <div class="section grid_container centered">
     <div class="grid_3_3">
         <h3 class="right">
-            <a href="">All projects &rarr;</a>
+            <a href="<?php bloginfo('url'); ?>/projects/">All projects &rarr;</a>
         </h3>
     </div>
 </div>
