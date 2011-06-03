@@ -6,9 +6,31 @@ $polarity = 1;
 
 // get only featured posts
 query_posts(array('category_name' => 'projects', 'order' => 'ASC', 'tag' => 'featured'));
+$posts = array();
 while (have_posts()) {
     the_post();
-    
+    $tags = get_the_tags();
+    if ($tags) {
+        foreach ($tags as $tag) {
+            if ($tag->name != 'featured') {
+                $date = $tag->name;
+            }
+        }
+    } else {
+        $date = '';
+    }
+    $posts[] = array(   'post' => $post,
+                        'date' => $date );
+    function cmp($a, $b) {
+        if ($a['date'] == $b['date']) {
+            return (strcmp($a['post']->post_title, $b['post']->post_title));
+        }
+        return ($a['date'] > $b['date']) ? -1 : 1;
+    }
+    usort($posts, 'cmp');
+}
+
+foreach ($posts as $post_array) {
     if ($polarity) {
         $section_class = 'dark';
         $clear_class = 'shadow';
@@ -19,6 +41,7 @@ while (have_posts()) {
         $polarity = 1;
     }
     
+    $post = $post_array['post'];
     $image = get_images($post->ID, 'crop');
     $href = get_permalink($post->ID);
 ?>

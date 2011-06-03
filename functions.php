@@ -7,9 +7,7 @@ remove_filter('the_content', 'wptexturize');
 remove_filter('the_excerpt', 'wptexturize');
 add_filter('post_limits', 'remove_limits');
 
-function remove_limits() {
-    return("");
-}
+function remove_limits() { return(""); }
 
 /* END filters */
 

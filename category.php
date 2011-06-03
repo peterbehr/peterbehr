@@ -56,7 +56,7 @@ foreach ($categories as $key => $value) {
         </div>
 <?php
         
-        usort($value, "cmp");
+        usort($value, 'cmp');
         $counter = 0;
         
         foreach ($value as $item) {
