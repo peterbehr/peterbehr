@@ -2,7 +2,9 @@
 
 $(function () {
     $('.icon').hover(function () {
-        $(this).children('.inset').fadeToggle('100');
+        $(this).stop(true, true).children('.inset').fadeIn('100');
+    }, function () {
+        $(this).stop(true, true).children('.inset').fadeOut('100');
     });
 });
 
