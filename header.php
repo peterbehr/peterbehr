@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 
+<html lang="en">
+
+<!--
+
+Peter Behr
+Version 0
+Peter Behr made this
+http://peterbehr.net
+
+-->
+
 <html <?php language_attributes(); ?>>
 
 <head>
@@ -40,47 +51,23 @@ if (is_home()) {
             </h1>
             <div class="grid_3_3 icons">
                 <a href="<?php bloginfo('url'); ?>/projects/">
-                    <div class="icon folio">
-                        <div class="inset">
-                            <span class="label">All Projects</span>
-                        </div>
-                    </div>
+                    Projects
                 </a>
                 <a href="http://peterbehr.tumblr.com">
-                    <div class="icon process">
-                        <div class="inset">
-                            <span class="label">Process</span>
-                        </div>
-                    </div>
+                    Process
                 </a>
                 <a href="http://www.flickriver.com/photos/peterbehr/sets/72157623305813607/">
-                    <div class="icon photo">
-                        <div class="inset">
-                            <span class="label">Photography</span>
-                        </div>
-                    </div>
+                    Photos
                 </a>
                 <a href="<?php bloginfo('url'); ?>/self/">
-                    <div class="icon self">
-                        <div class="inset">
-                            <span class="label">Biography</span>
-                        </div>
-                    </div>
+                    Bio
                 </a>
-                <a href="https://github.com/peterbehr/peterbehr/">
-                    <div class="icon source">
-                        <div class="inset">
-                            <span class="label">Source</span>
-                        </div>
-                    </div>
+                <a href="https://github.com/peterbehr/">
+                    Source
                 </a>
-                <div class="icon contact">
-                    <div class="inset">
-                        <span class="label">
-                            <a href="http://twitter.com/peterbehr">Twitter</a>, <a href="http://facebook.com/peterbehr">Facebook</a>, <a href="http://www.linkedin.com/in/peterbehr">LinkedIn</a>
-                        </span>
-                    </div>
-                </div>
+                <a href="">
+                    Twitter
+                </a>
                 <div class="zero clear">
                 </div>
             </div>

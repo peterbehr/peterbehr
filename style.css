@@ -86,53 +86,6 @@ img { display: block; }
     margin-top: -15px;
 }
 
-.icons {
-    padding: 0px 0px 10px 0px;
-}
-
-.icon {
-    float: left;
-    height: 60px;
-    width: 60px;
-    margin: 0px 20px 0px 0px;
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.icon.folio { background: url('images/icon_folio.png'); }
-.icon.process { background: url('images/icon_process.png'); }
-.icon.photo { background: url('images/icon_photo.png'); }
-.icon.self { background: url('images/icon_self.png'); }
-.icon.source { background: url('images/icon_source.png'); }
-.icon.contact { background: url('images/icon_contact.png'); }
-
-.icon .inset {
-    display: inline;
-    position: relative;
-    top: 55px;
-    left: 50%;
-    width: 300px;
-    height: 30px;
-    margin: 0px 0px 0px -150px;
-    text-align: center;
-    position: absolute;
-    z-index: 2;
-    display: none;
-}
-
-.icon .inset .label {
-    padding: 5px 8px 5px 8px;
-    line-height: 30px;
-    font-size: 20px;
-    background-image: url('http://peterbehr.net/biblioteka/images/opacity/opacity_ffffff_1x1_090.png');
-    background-repeat: repeat;
-    border-radius: 15px;
-}
-
-a .icon .inset .label:hover, a .icon .inset span.label:active {
-    text-decoration: underline;
-}
 
 /* END #header */
 
