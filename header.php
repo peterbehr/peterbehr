@@ -49,25 +49,27 @@ if (is_home()) {
             <h1 class="grid_3_3">
                 My name is Peter Behr. I code and draw.
             </h1>
-            <div class="grid_3_3 icons">
-                <a href="<?php bloginfo('url'); ?>/projects/">
-                    Projects
-                </a>
-                <a href="http://peterbehr.tumblr.com">
-                    Process
-                </a>
-                <a href="http://www.flickriver.com/photos/peterbehr/sets/72157623305813607/">
-                    Photos
-                </a>
-                <a href="<?php bloginfo('url'); ?>/self/">
-                    Bio
-                </a>
-                <a href="https://github.com/peterbehr/">
-                    Source
-                </a>
-                <a href="">
-                    Twitter
-                </a>
+            <div class="grid_3_3">
+                <ol class="nav">
+                    <li>
+                        <a href="<?php bloginfo('url'); ?>/projects/">Projects</a>
+                    </li>
+                    <li>
+                        <a href="http://peterbehr.tumblr.com">Process</a>
+                    </li>
+                    <li>
+                        <a href="http://www.flickriver.com/photos/peterbehr/sets/72157623305813607/">Photos</a>
+                    </li>
+                    <li>
+                        <a href="<?php bloginfo('url'); ?>/self/">Bio</a>
+                    </li>
+                    <li>
+                        <a href="<?php bloginfo('url'); ?>/meta/">Meta</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ol>
                 <div class="zero clear">
                 </div>
             </div>
