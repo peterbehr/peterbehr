@@ -27,7 +27,7 @@ body {
 }
 
 a:link, a:active, a:hover, a:visited {
-    color: #3fa2ca;
+    color: #80b0c4;
     text-decoration: none;
     font-style: inherit;
 }
@@ -55,10 +55,6 @@ img { display: block; }
     padding: 20px 0px 20px 0px;
 }
 
-.section.slim {
-    padding: 10px 0px 5px 0px;
-}
-
 .section.bald {
     border-top: 0px #ffffff solid !important;
 }
@@ -82,16 +78,51 @@ img { display: block; }
 
 /* BEGIN #header */
 
-#header .section.slim .icons {
-    margin-top: -15px;
+#header h1 {
+    margin-bottom: 6px;
 }
 
 #header .nav li {
-    list-style-type: decimal;
     list-style-position: inside;
     float: left;
-    margin: 0px 16px 0px 0px;
+    margin: 0px 48px 0px 0px;
     font-size: 22px;
+}
+
+#header .nav li.active {
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-image: url('images/dot.png');
+}
+
+#header .nav li a {
+    display: block;
+}
+
+#header .nav li a.icon {
+    display: none;
+    width: 16px;
+    height: 16px;
+}
+
+#header .nav li a.twitter {
+    background-image: url('http://peterbehr.net/biblioteka/images/others/komodo/twitter_16.png');
+}
+
+#header .section.slim {
+    padding: 8px 0px 0px 0px;
+}
+
+#header .section.slim .shadow {
+    height: 8px;
+}
+
+.twitter {
+    background-image: url('images/twitter.png');
+    width: 15px;
+    height: 15px;
+    margin: 8px 0px 0px 0px;
+    display: block;
 }
 
 /* END #header */
@@ -108,6 +139,16 @@ img { display: block; }
 }
 
 /* END #footer */
+
+
+
+/* BEGIN .section */
+
+.tight {
+    margin: 0px;
+}
+
+/* END .section */
 
 
 
@@ -144,12 +185,16 @@ img { display: block; }
 
 .dark {
     background-color: #063a73;
-    color: #fdfdfd;
+    color: #d0d9e0;
     background-image: url('http://peterbehr.net/biblioteka/images/gradients/gradient_000000_1x8_020_000.png');
     background-position: 0px 0px;
     background-repeat: repeat-x;
     padding: 20px 0px 0px 0px;
-    text-shadow: #000 0px -1px;
+    /*text-shadow: #000 0px -1px;*/
+}
+
+.dark a {
+    color: #a6d2dc;
 }
 
 .dark div.shadow {
@@ -180,6 +225,10 @@ a.block {
 
 a.block div.grid_1_3:hover {
     text-decoration: underline;
+}
+
+a.block div.grid_1_3.text:hover {
+    text-decoration: none;
 }
 
 

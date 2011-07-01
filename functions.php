@@ -13,7 +13,7 @@ function remove_limits() { return(""); }
 
 
 
-$polarity = 1;
+$polarity = 0;
 
 function cmp_date($a, $b) {
     if ($a['date'] == $b['date']) {

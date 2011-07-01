@@ -58,7 +58,7 @@ if (is_home()) {
                         <a href="http://peterbehr.tumblr.com">Process</a>
                     </li>
                     <li>
-                        <a href="http://www.flickriver.com/photos/peterbehr/sets/72157623305813607/">Photos</a>
+                        <a href="http://www.flickriver.com/photos/peterbehr/sets/72157623305813607/">Photo</a>
                     </li>
                     <li>
                         <a href="<?php bloginfo('url'); ?>/self/">Bio</a>
@@ -66,8 +66,11 @@ if (is_home()) {
                     <li>
                         <a href="<?php bloginfo('url'); ?>/meta/">Meta</a>
                     </li>
-                    <li>
-                        <a href="#">Contact</a>
+                    <li class="contact">
+                        <a href="<?php bloginfo('url'); ?>/contact/" class="text">Contact</a>
+                        <!--<a href="http://twitter.com/peterbehr" class="twitter icon"></a>
+                        <a href="http://facebook.com/peterbehr" class="facebook icon"></a>
+                        <a href="http://linkedin.com/in/peterbehr" class="linkedin icon"></a>-->
                     </li>
                 </ol>
                 <div class="zero clear">
@@ -79,55 +82,36 @@ if (is_home()) {
 <?php
 } else {
 ?>
-<div id="header" class="even">
-    <div class="section bright slim">
-        <div class="grid_container centered icons">
+<div id="header">
+    <div class="section dark slim">
+        <div class="grid_container centered">
             <div class="grid_3_3">
-                <a href="<?php bloginfo('url'); ?>/projects/">
-                    <div class="icon folio">
-                        <div class="inset">
-                            <span class="label">All Projects</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="http://peterbehr.tumblr.com">
-                    <div class="icon process">
-                        <div class="inset">
-                            <span class="label">Process</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="http://www.flickriver.com/photos/peterbehr/sets/72157623305813607/">
-                    <div class="icon photo">
-                        <div class="inset">
-                            <span class="label">Photography</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="<?php bloginfo('url'); ?>/self/">
-                    <div class="icon self">
-                        <div class="inset">
-                            <span class="label">Biography</span>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://github.com/peterbehr/peterbehr/">
-                    <div class="icon source">
-                        <div class="inset">
-                            <span class="label">Source</span>
-                        </div>
-                    </div>
-                </a>
-                <div class="icon contact">
-                    <div class="inset">
-                        <span class="label">
-                            <a href="http://twitter.com/peterbehr">Twitter</a>, <a href="http://facebook.com/peterbehr">Facebook</a>, <a href="http://www.linkedin.com/in/peterbehr">LinkedIn</a>
-                        </span>
-                    </div>
-                </div>
-                <div class="zero clear">
-                </div>
+                <ol class="nav">
+                    <li <?php if (is_home()) { ?>class="active"<?php } ?>>
+                        <a href="<?php bloginfo('url'); ?>/projects/">Projects</a>
+                    </li>
+                    <li>
+                        <a href="http://peterbehr.tumblr.com">Process</a>
+                    </li>
+                    <li>
+                        <a href="http://www.flickriver.com/photos/peterbehr/sets/72157623305813607/">Photo</a>
+                    </li>
+                    <li <?php if (is_home()) { ?>class="active"<?php } ?>>
+                        <a href="<?php bloginfo('url'); ?>/self/">Bio</a>
+                    </li>
+                    <li <?php if (is_home()) { ?>class="active"<?php } ?>>
+                        <a href="<?php bloginfo('url'); ?>/meta/">Meta</a>
+                    </li>
+                    <li class="contact">
+                        <a href="<?php bloginfo('url'); ?>/contact/" class="text">Contact</a>
+                        <!--<a href="http://twitter.com/peterbehr" class="twitter icon"></a>
+                        <a href="http://facebook.com/peterbehr" class="facebook icon"></a>
+                        <a href="http://linkedin.com/in/peterbehr" class="linkedin icon"></a>-->
+                    </li>
+                </ol>
             </div>
+        </div>
+        <div class="shadow clear">
         </div>
     </div>
 </div>

@@ -1,14 +1,16 @@
 <?php get_header(); ?>
 
-<div>
+<!--div>
     <div class="grid_container centered">
-        <h1 class="section slim grid_3_3">
+        <div class="section grid_3_3">
+            <h1 class="tight">
 <?php
     echo(ucwords(get_query_var('category_name')));
 ?>
-        </h1>
+            </h1>
+        </div>
     </div>
-</div>
+</div-->
 
 <?php
 $categories = array();

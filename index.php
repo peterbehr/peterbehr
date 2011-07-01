@@ -42,18 +42,19 @@ foreach ($posts as $post_array) {
 
 <div class="section project <?php echo($section_class); ?>">
     <div class="grid_container centered">
-        <div class="grid_2_3 left">
-            <div class="image"><?php echo($image); ?></div>
-        </div>
-        <div class="grid_1_3 right text">
-            <h3 class="bold">
-                <?php echo($post->post_title); ?>
-            </h3>
-            <?php echo($post->post_content); ?>
-            <p class="right">
-                <a href="<?php echo($href); ?>" class="italic">View &rarr;</a>
-            </p>
-        </div>
+        <a href="<?php echo($href); ?>" class="block">
+            <div class="grid_2_3 left">
+                <div class="image"><?php echo($image); ?></div>
+            </div>
+            <div class="grid_1_3 right text">
+                <h3 class="bold">
+                    <?php echo($post->post_title); ?>
+                </h3>
+                <?php echo($post->post_content); ?>
+                <p class="right">
+                </p>
+            </div>
+        </a>
     </div>
     <div class="<?php echo($clear_class); ?> clear">
     </div>
