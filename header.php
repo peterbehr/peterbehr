@@ -66,12 +66,12 @@ if (is_home()) {
                     <li>
                         <a href="<?php bloginfo('url'); ?>/meta/">Meta</a>
                     </li>
-                    <li class="contact">
+                    <!--<li class="contact">
                         <a href="<?php bloginfo('url'); ?>/contact/" class="text">Contact</a>
                         <!--<a href="http://twitter.com/peterbehr" class="twitter icon"></a>
                         <a href="http://facebook.com/peterbehr" class="facebook icon"></a>
-                        <a href="http://linkedin.com/in/peterbehr" class="linkedin icon"></a>-->
-                    </li>
+                        <a href="http://linkedin.com/in/peterbehr" class="linkedin icon"></a>
+                    </li>-->
                 </ol>
                 <div class="zero clear">
                 </div>
@@ -102,12 +102,12 @@ if (is_home()) {
                     <li <?php if (is_home()) { ?>class="active"<?php } ?>>
                         <a href="<?php bloginfo('url'); ?>/meta/">Meta</a>
                     </li>
-                    <li class="contact">
+                    <!--<li class="contact">
                         <a href="<?php bloginfo('url'); ?>/contact/" class="text">Contact</a>
                         <!--<a href="http://twitter.com/peterbehr" class="twitter icon"></a>
                         <a href="http://facebook.com/peterbehr" class="facebook icon"></a>
-                        <a href="http://linkedin.com/in/peterbehr" class="linkedin icon"></a>-->
-                    </li>
+                        <a href="http://linkedin.com/in/peterbehr" class="linkedin icon"></a>
+                    </li>-->
                 </ol>
             </div>
         </div>
