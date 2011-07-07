@@ -23,7 +23,7 @@ http://peterbehr.net
     <meta name="robots" content="all" />
     
     <title>
-        <?php bloginfo('name'); ?><?php wp_title(':'); ?>
+        <?php echo(get_bloginfo('name').(is_home() ? ': Home' : trim(wp_title(':', false, '')))); ?>
     </title>
     
     <link rel="stylesheet" type="text/css" media="all" href="http://peterbehr.net/biblioteka/css/default.css" />
@@ -52,7 +52,7 @@ if (is_home()) {
             <div class="grid_3_3">
                 <ol class="nav">
                     <li>
-                        <a href="<?php bloginfo('url'); ?>/projects/">Projects</a>
+                        <a href="<?php bloginfo('url'); ?>/projects/">Folio</a>
                     </li>
                     <li>
                         <a href="http://peterbehr.tumblr.com">Process</a>
@@ -66,12 +66,12 @@ if (is_home()) {
                     <li>
                         <a href="<?php bloginfo('url'); ?>/meta/">Meta</a>
                     </li>
-                    <!--<li class="contact">
-                        <a href="<?php bloginfo('url'); ?>/contact/" class="text">Contact</a>
-                        <!--<a href="http://twitter.com/peterbehr" class="twitter icon"></a>
-                        <a href="http://facebook.com/peterbehr" class="facebook icon"></a>
-                        <a href="http://linkedin.com/in/peterbehr" class="linkedin icon"></a>
-                    </li>-->
+                    <li class="contact">
+                        <!--<a href="<?php bloginfo('url'); ?>/contact/" class="text">Contact</a>-->
+                        <a href="http://twitter.com/peterbehr" class="icon"><img src="http://peterbehr.net/biblioteka/images/others/komodo/twitter_16.png" alt="Twitter" /></a>
+                        <a href="http://facebook.com/peterbehr" class="icon"><img src="http://peterbehr.net/biblioteka/images/others/komodo/facebook_16.png" alt="Facebook" /></a>
+                        <a href="http://linkedin.com/in/peterbehr" class="icon"><img src="http://peterbehr.net/biblioteka/images/others/komodo/linkedin_16.png" alt="LinkedIn" /></a>
+                    </li>
                 </ol>
                 <div class="zero clear">
                 </div>
@@ -88,7 +88,7 @@ if (is_home()) {
             <div class="grid_3_3">
                 <ol class="nav">
                     <li <?php if (is_home()) { ?>class="active"<?php } ?>>
-                        <a href="<?php bloginfo('url'); ?>/projects/">Projects</a>
+                        <a href="<?php bloginfo('url'); ?>/projects/">Folio</a>
                     </li>
                     <li>
                         <a href="http://peterbehr.tumblr.com">Process</a>
@@ -102,12 +102,12 @@ if (is_home()) {
                     <li <?php if (is_home()) { ?>class="active"<?php } ?>>
                         <a href="<?php bloginfo('url'); ?>/meta/">Meta</a>
                     </li>
-                    <!--<li class="contact">
-                        <a href="<?php bloginfo('url'); ?>/contact/" class="text">Contact</a>
-                        <!--<a href="http://twitter.com/peterbehr" class="twitter icon"></a>
-                        <a href="http://facebook.com/peterbehr" class="facebook icon"></a>
-                        <a href="http://linkedin.com/in/peterbehr" class="linkedin icon"></a>
-                    </li>-->
+                    <li class="contact">
+                        <!--<a href="<?php bloginfo('url'); ?>/contact/" class="text">Contact</a>-->
+                        <a href="http://twitter.com/peterbehr" class="icon"><img src="http://peterbehr.net/biblioteka/images/others/komodo/twitter_16.png" alt="Twitter" /></a>
+                        <a href="http://facebook.com/peterbehr" class="icon"><img src="http://peterbehr.net/biblioteka/images/others/komodo/facebook_16.png" alt="Facebook" /></a>
+                        <a href="http://linkedin.com/in/peterbehr" class="icon"><img src="http://peterbehr.net/biblioteka/images/others/komodo/linkedin_16.png" alt="LinkedIn" /></a>
+                    </li>
                 </ol>
             </div>
         </div>
