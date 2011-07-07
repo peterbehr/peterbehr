@@ -23,7 +23,7 @@ http://peterbehr.net
     <meta name="robots" content="all" />
     
     <title>
-        <?php bloginfo('name'); ?>
+        <?php bloginfo('name'); ?><?php wp_title(':'); ?>
     </title>
     
     <link rel="stylesheet" type="text/css" media="all" href="http://peterbehr.net/biblioteka/css/default.css" />
