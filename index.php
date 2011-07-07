@@ -5,7 +5,7 @@
 $polarity = 1;
 
 // get only featured posts
-query_posts(array('category_name' => 'projects', 'order' => 'ASC', 'tag' => 'featured'));
+query_posts(array('category_name' => 'folio', 'order' => 'ASC', 'tag' => 'featured'));
 $posts = array();
 while (have_posts()) {
     the_post();
@@ -67,7 +67,7 @@ foreach ($posts as $post_array) {
 <div class="section grid_container centered">
     <div class="grid_3_3">
         <h3 class="right">
-            <a href="<?php bloginfo('url'); ?>/projects/">All projects &rarr;</a>
+            <a href="<?php bloginfo('url'); ?>/folio/">All projects &rarr;</a>
         </h3>
     </div>
 </div>

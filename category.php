@@ -34,7 +34,7 @@ krsort($categories);
 // falls back to post title
 
 foreach ($categories as $key => $value) {
-    if ($key != 'Projects') {
+    if ($key != 'Folio') {
         if ($polarity) {
             $section_class = 'dark';
             $clear_class = 'shadow';

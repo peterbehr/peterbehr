@@ -52,7 +52,7 @@ if (is_home()) {
             <div class="grid_3_3">
                 <ol class="nav">
                     <li>
-                        <a href="<?php bloginfo('url'); ?>/projects/">Folio</a>
+                        <a href="<?php bloginfo('url'); ?>/folio/">Folio</a>
                     </li>
                     <li>
                         <a href="http://peterbehr.tumblr.com">Process</a>
@@ -88,7 +88,7 @@ if (is_home()) {
             <div class="grid_3_3">
                 <ol class="nav">
                     <li <?php if (is_home()) { ?>class="active"<?php } ?>>
-                        <a href="<?php bloginfo('url'); ?>/projects/">Folio</a>
+                        <a href="<?php bloginfo('url'); ?>/folio/">Folio</a>
                     </li>
                     <li>
                         <a href="http://peterbehr.tumblr.com">Process</a>
